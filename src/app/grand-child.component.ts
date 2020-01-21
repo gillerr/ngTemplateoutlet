@@ -1,4 +1,4 @@
-import {Component, ContentChildren, QueryList, TemplateRef} from '@angular/core';
+import {Component, Input, QueryList, TemplateRef} from '@angular/core';
 
 @Component({
   selector: 'app-grand-child',
@@ -10,5 +10,5 @@ import {Component, ContentChildren, QueryList, TemplateRef} from '@angular/core'
   `
 })
 export class GrandChildComponent {
-  @ContentChildren('tpl') templates: QueryList<TemplateRef<any>>;
+  @Input('tpl') templates: QueryList<TemplateRef<any>>;
 }
