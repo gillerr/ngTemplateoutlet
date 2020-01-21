@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testProject": {
+    "ngTemplateoutlet": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/testProject",
+            "outputPath": "dist/ngTemplateoutlet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,15 +65,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testProject:build"
+            "browserTarget": "ngTemplateoutlet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testProject:build:production"
+              "browserTarget": "ngTemplateoutlet:build:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "testProject"
+  "defaultProject": "ngTemplateoutlet"
 }
