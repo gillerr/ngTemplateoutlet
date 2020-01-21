@@ -7,12 +7,7 @@ import {Component, ContentChildren, QueryList, TemplateRef} from '@angular/core'
   <ng-container *ngFor="let template of templates">
 		  <ng-container *ngTemplateOutlet="template"></ng-container>
   </ng-container>
-  <app-grand-child>
-	  <ng-container *ngFor="let template of templates">
-		  <ng-template #tpl>
-			  <ng-container *ngTemplateOutlet="template"></ng-container>
-		  </ng-template>
-	  </ng-container>
+  <app-grand-child [tpl]="templates">
   </app-grand-child>
   `
 })
